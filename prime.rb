@@ -4,7 +4,7 @@ def prime?(int)
     return true
   end
 
-  if int <= 0
+  if int <= 1
     return false
   end
 
