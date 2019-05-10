@@ -5,7 +5,7 @@ def prime?(int)
   elsif int <= 1
     return false
   end
-  
+
   (2...int).each do |num|
     if !(int % num == 0)
       return true
