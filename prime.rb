@@ -6,11 +6,13 @@ def prime?(int)
     return false
   end
 
-  for num in (2...int)
-    if any?(int % num == 0)
+  (2...int).each do |n|
+    if int % n == 0
       return false
+      break
     else
       return true
     end
   end
+  
 end
