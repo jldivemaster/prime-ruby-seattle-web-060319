@@ -7,12 +7,9 @@ def prime?(int)
   end
 
   (2...int).each do |n|
-    if int % n == 0
-      return false
-      break
-    else
-      return true
-    end
+    return false if int % n == 0
   end
+  
+  true
 
 end
