@@ -9,7 +9,7 @@ def prime?(int)
   (2...int).each do |n|
     return false if int % n == 0
   end
-  
+
   true
 
 end
