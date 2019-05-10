@@ -6,11 +6,11 @@ def prime?(int)
     return false
   end
 
-  (2...int).each do |num|
-    if !(int % num == 0)
-      return true
-    else
+  for num in (2...int)
+    if any?(int % num == 0)
       return false
+    else
+      return true
     end
   end
 end
